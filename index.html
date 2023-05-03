@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script defer src="scripts/script.js"></script>  
+        <title>Students</title>
+    </head>
+    <body>
+        <header class="headerCode">
+            <div class="imgDivLeft">
+                <img src="img/logo.png" class="img" alt="logo">  
+            </div>
+            <div class="imgDivRight">
+                <img src="img/psu.png" class="img" alt="psu">  
+                <hr class="line">
+                <p class="psuText">Федеральное государственное автономное образовательное учреждение высшего образования «Пермский государственный национальный исследовательский университет»</p>
+                <hr class="line">
+            </div>
+            <div class="formDiv">
+                <form class="form" onsubmit="return false;">
+                    <fieldset>
+                        <legend class="addStudent">Добавить студента</legend>
+                        <p class="addStr">
+                            <label for="firstName">Имя</label>
+                            <input type="text" maxlength="25" class="input" id="firstName">
+                        </p>
+                        <p class="addStr">
+                            <label for="secondName">Фамилия</label>
+                            <input type="text" maxlength="25" class="input" id="secondName">
+                        </p>
+                        <p class="addStr">
+                            <label for="middleName">Отчество</label>
+                            <input type="text" maxlength="25" class="input" id="middleName">
+                        </p>
+                        <p class="addStr">
+                            <label for="birthDay">Дата рождения</label>
+                            <input type="date" min="1960-01-01" max="2005-12-31" value="2000-01-01" class="input" id="birthDay">
+                        </p>
+                        <p class="addStr">
+                            <label for="startYear">Год начала обучения</label>
+                            <select class="input" id="startYear">
+                                <option class="option">2012</option>
+                                <option class="option">2013</option>
+                                <option class="option">2014</option>
+                                <option class="option">2015</option>
+                                <option class="option">2016</option>    
+                                <option class="option">2017</option>
+                                <option class="option">2018</option>
+                                <option class="option">2019</option>
+                                <option class="option">2020</option>
+                                <option class="option">2021</option>    
+                                <option class="option">2022</option> 
+                            </select>
+
+                        </p>
+                        <p class="addStr">
+                            <label for="faculty">Факультет</label>
+                            <select class="input" id="faculty">
+                                <option class="option">Биологический</option>
+                                <option class="option">Географический</option>
+                                <option class="option">Историко-политологический</option>
+                                <option class="option">Механико-математический</option>
+                                <option class="option">Физический</option>    
+                                <option class="option">Философско-социологический</option>
+                                <option class="option">Филологический</option>
+                                <option class="option">Химический</option>
+                                <option class="option">Юридический</option>
+                                <option class="option">Экономический</option>                           
+                            </select>
+                        </p> 
+                    </fieldset>
+                    <p><button class="add" id="add">Добавить</button></p>
+                </form>  
+            </div>
+        </header>
+        <main class="mainCode">
+            <div class="tableDiv">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th data-type="string">Имя</th>
+                            <th data-type="string">Фамилия</th>
+                            <th data-type="string">Отчество</th>
+                            <th data-type="date">Дата рождения</th>
+                            <th data-type="number">Год начала обучения</th>
+                            <th colspan="2" data-type="string">Факультет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
